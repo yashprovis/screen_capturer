@@ -19,11 +19,11 @@ class SystemScreenCapturerImplLinux extends SystemScreenCapturer {
     bool silent = true,
   }) async {
     await Process.run(
-      'gnome-screenshot',
-      [
-        ..._knownCaptureModeArgs[mode]!,
-        '-f',
+      'shutter -f -o ',
+      [         
+     
         imagePath,
+   ' -e',
       ],
     );
   }
