@@ -19,11 +19,11 @@ class SystemScreenCapturerImplLinux extends SystemScreenCapturer {
     bool silent = true,
   }) async {
     await Process.run(
-      'shutter -f -o ',
+      'shutter -f -o',
       [         
      
         imagePath,
-   ' -e',
+   '-e',
       ],
     );
   }
